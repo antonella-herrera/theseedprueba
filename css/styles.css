@@ -16,10 +16,6 @@ body{
     background-size: cover;*/
   
 }
-h4{
-  font-size: 20px;
-  margin-bottom: 2rem;
-}
 
 .img{
   max-width: 100%;
@@ -107,6 +103,8 @@ h2{
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    padding-left:0.5rem;
+    padding-right: 0.5rem;
 }
 .card-title{
   font-weight: 700;
@@ -196,11 +194,14 @@ border: none;
 
   .bloque-titulo{
     width:70% ;
-    width: 90%;
     margin: 2em 1em 3em 1em;
 }
 
-
+.bloque-titulo h4, .col-texto h4{
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
   /*nosotros*/
  .nosotros .col-12, .nosotros .col-md-6, .nosotros .col-lg-6, 
  .porque .col-12, .porque .col-md-6, .porque .col-lg-6,
@@ -552,5 +553,8 @@ border: none;
 
   .titulos{
     text-align: center;
+  }
+  .bloque-titulo h4, .col-texto h4{
+    margin-bottom: 2rem;
   }
 }
