@@ -1,41 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&family=Rubik:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="width: 150px;">
-              <img src="img/logo-version1.svg" alt="" class="d-block w-100">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">version 1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="version.html">version 2</a>
-              </li>
-            </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="img/logo-version1.svg" alt="" class="d-block w-100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">version 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="version.html">version 2</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portada d-flex align-items-center" id="inicio">
+      <div class="container">
+        <article class="row align-items-lg-center">
+          <div class="col-12 col-md-12 col-lg-6">
+            <svg class="img-portada-desktop" viewBox="0 0 849 924" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="438.729" cy="750.729" r="166.729" stroke="url(#paint0_linear_254_1794)" stroke-width="12" />
+              <path
+                d="M436.735 848.557C434.228 848.557 432.155 847.739 430.516 846.103C428.877 844.467 428.057 842.398 428.057 839.895V824.304C418.801 822.764 410.895 819.492 404.339 814.487C397.783 809.482 392.673 803.13 389.009 795.431C388.045 793.313 388.045 791.1 389.009 788.79C389.973 786.48 391.612 784.844 393.926 783.882C396.047 782.919 398.217 782.919 400.434 783.882C402.652 784.844 404.339 786.384 405.496 788.501C408.967 795.046 413.499 799.954 419.091 803.226C424.683 806.499 431.143 808.135 438.47 808.135C447.726 808.135 455.343 805.825 461.321 801.205C467.299 796.586 470.288 790.234 470.288 782.149C470.288 773.68 467.636 767.135 462.333 762.516C457.031 757.896 447.051 753.18 432.396 748.368C418.512 743.941 408.147 738.07 401.302 730.755C394.456 723.441 391.034 714.298 391.034 703.326C391.034 692.739 394.456 683.885 401.302 676.763C408.147 669.641 417.066 665.598 428.057 664.636V649.333C428.057 646.831 428.877 644.762 430.516 643.126C432.155 641.489 434.228 640.671 436.735 640.671C439.242 640.671 441.315 641.489 442.954 643.126C444.593 644.762 445.412 646.831 445.412 649.333V664.636C452.354 665.598 458.573 667.716 464.069 670.988C469.565 674.26 474.144 678.495 477.808 683.692C479.158 685.617 479.447 687.686 478.676 689.9C477.905 692.113 476.362 693.701 474.048 694.664C471.927 695.626 469.709 695.723 467.395 694.953C465.081 694.183 463.153 692.739 461.61 690.622C458.911 687.157 455.584 684.606 451.631 682.97C447.678 681.334 442.906 680.516 437.313 680.516C428.443 680.516 421.405 682.537 416.198 686.579C410.992 690.622 408.388 696.108 408.388 703.037C408.388 710.352 411.281 716.271 417.066 720.794C422.851 725.317 433.553 729.985 449.173 734.797C462.285 738.84 471.975 744.662 478.242 752.266C484.509 759.869 487.643 769.445 487.643 780.994C487.643 793.121 484.075 802.89 476.941 810.3C469.806 817.711 459.296 822.475 445.412 824.592V839.895C445.412 842.398 444.593 844.467 442.954 846.103C441.315 847.739 439.242 848.557 436.735 848.557Z"
+                fill="url(#paint1_linear_254_1794)" />
+              <circle cx="388.414" cy="333.414" r="203.414" stroke="url(#paint2_linear_254_1794)" stroke-width="12" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M377.282 229.339L311.555 374.991L377.282 385.719V229.339ZM397.693 229.339V385.719L463.419 374.991L397.693 229.339ZM387.488 472.373L322.731 395.766L383.239 405.642C386.053 406.101 388.922 406.101 391.736 405.642L452.244 395.766L387.488 472.373ZM402.992 191.462C396.968 178.113 378.007 178.113 371.983 191.462L289.845 373.481C287.149 379.453 288.127 386.443 292.358 391.447L374.496 488.616C381.291 496.654 393.684 496.654 400.479 488.616L482.617 391.447C486.847 386.443 487.825 379.453 485.13 373.481L402.992 191.462Z"
+                fill="url(#paint3_linear_254_1794)" />
+              <path
+                d="M166.003 620.502L213.504 648L261 620.497L260.997 565.497L213.497 538L166 565.502L166.003 620.502Z"
+                stroke="#3113F1" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M736.003 249.001L772.003 270L808 248.997L807.997 206.997L771.998 186L736 207.001L736.003 249.001Z"
+                stroke="#3113F1" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M478.003 66.0013L514.003 87L550 65.9974L549.997 23.9974L513.998 3L478 24.0013L478.003 66.0013Z"
+                stroke="#3113F1" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3.00259 339.001L39.0032 360L75 338.997L74.9974 296.997L38.9981 276L3 297.001L3.00259 339.001Z"
+                stroke="#3113F1" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M140.5 216.238C147.859 207.628 146.844 194.683 138.235 187.324C129.626 179.965 116.681 180.98 109.323 189.59C101.965 198.199 102.979 211.145 111.589 218.503C120.198 225.862 133.142 224.848 140.5 216.238Z"
+                fill="#3113F1" fill-opacity="0.5" />
+              <path
+                d="M833 361.747C833 357.473 836.464 354 840.747 354C845.021 354 848.493 357.464 848.493 361.747C848.493 366.022 845.03 369.494 840.747 369.494C836.464 369.494 833 366.03 833 361.747Z"
+                fill="#3113F1" fill-opacity="0.5" />
+              <path
+                d="M657 137.623C657 133.411 660.41 130 664.622 130C668.834 130 672.244 133.411 672.244 137.623C672.244 141.835 668.834 145.245 664.622 145.245C660.41 145.245 657 141.835 657 137.623Z"
+                fill="#3113F1" fill-opacity="0.5" />
+              <path
+                d="M657.461 276.091C657.461 272.983 659.981 270.454 663.097 270.454C666.205 270.454 668.734 272.974 668.734 276.091C668.734 279.208 666.214 281.728 663.097 281.728C659.99 281.728 657.461 279.208 657.461 276.091Z"
+                fill="#3113F1" fill-opacity="0.5" />
+              <path
+                d="M671.14 284.141C675.584 279.697 675.583 272.491 671.139 268.047C666.695 263.603 659.491 263.603 655.047 268.047C650.603 272.491 650.602 279.697 655.046 284.141C659.49 288.586 666.696 288.586 671.14 284.141Z"
+                stroke="#3113F1" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M136.461 484.091C136.461 480.983 138.981 478.454 142.097 478.454C145.205 478.454 147.734 480.974 147.734 484.091C147.734 487.208 145.214 489.728 142.097 489.728C138.99 489.728 136.461 487.208 136.461 484.091Z"
+                fill="#3113F1" fill-opacity="0.5" />
+              <path
+                d="M150.14 492.141C154.584 487.697 154.583 480.491 150.139 476.047C145.695 471.603 138.491 471.603 134.047 476.047C129.603 480.491 129.602 487.697 134.046 492.141C138.49 496.586 145.696 496.586 150.14 492.141Z"
+                stroke="#3113F1" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M192.461 733.091C192.461 729.983 194.981 727.454 198.097 727.454C201.205 727.454 203.734 729.974 203.734 733.091C203.734 736.208 201.214 738.728 198.097 738.728C194.99 738.728 192.461 736.208 192.461 733.091Z"
+                fill="#3113F1" fill-opacity="0.5" />
+              <path
+                d="M206.14 741.141C210.584 736.697 210.583 729.491 206.139 725.047C201.695 720.603 194.491 720.603 190.047 725.047C185.603 729.491 185.602 736.697 190.046 741.141C194.49 745.586 201.696 745.586 206.14 741.141Z"
+                stroke="#3113F1" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M255.461 29.091C255.461 25.9832 257.981 23.4543 261.097 23.4543C264.205 23.4543 266.734 25.9743 266.734 29.091C266.734 32.2077 264.214 34.7278 261.097 34.7278C257.99 34.7278 255.461 32.2077 255.461 29.091Z"
+                fill="#3113F1" fill-opacity="0.5" />
+              <path
+                d="M269.14 37.1413C273.584 32.6969 273.583 25.4914 269.139 21.0471C264.695 16.6027 257.491 16.6027 253.047 21.0471C248.603 25.4914 248.602 32.6969 253.046 37.1413C257.49 41.5856 264.696 41.5856 269.14 37.1413Z"
+                stroke="#3113F1" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="697" cy="526" r="129" stroke="url(#paint4_linear_254_1794)" stroke-width="12" />
+              <path
+                d="M675.801 604.207C673.923 604.207 672.371 603.591 671.143 602.36C669.915 601.129 669.301 599.572 669.301 597.69V584.655H647.637C645.759 584.655 644.207 584.04 642.979 582.809C641.752 581.578 641.138 580.021 641.138 578.138C641.138 576.255 641.752 574.698 642.979 573.467C644.207 572.236 645.759 571.621 647.637 571.621H660.636V480.379H647.637C645.759 480.379 644.207 479.764 642.979 478.533C641.752 477.302 641.138 475.745 641.138 473.862C641.138 471.979 641.752 470.422 642.979 469.191C644.207 467.96 645.759 467.345 647.637 467.345H669.301V454.31C669.301 452.428 669.915 450.871 671.143 449.64C672.371 448.409 673.923 447.793 675.801 447.793C677.678 447.793 679.231 448.409 680.459 449.64C681.686 450.871 682.3 452.428 682.3 454.31V467.345H706.131V454.31C706.131 452.428 706.745 450.871 707.973 449.64C709.2 448.409 710.753 447.793 712.63 447.793C714.508 447.793 716.061 448.409 717.288 449.64C718.516 450.871 719.13 452.428 719.13 454.31V467.997C726.929 469.59 733.212 473.428 737.978 479.51C742.744 485.593 745.127 492.4 745.127 499.931C745.127 503.986 744.333 508.005 742.744 511.988C741.155 515.971 738.844 519.555 735.811 522.741C741.444 525.638 745.849 529.729 749.027 535.016C752.204 540.302 753.793 545.986 753.793 552.069C753.793 561.193 750.652 568.905 744.369 575.205C738.086 581.505 730.395 584.655 721.296 584.655H719.13V597.69C719.13 599.572 718.516 601.129 717.288 602.36C716.061 603.591 714.508 604.207 712.63 604.207C710.753 604.207 709.2 603.591 707.973 602.36C706.745 601.129 706.131 599.572 706.131 597.69V584.655H682.3V597.69C682.3 599.572 681.686 601.129 680.459 602.36C679.231 603.591 677.678 604.207 675.801 604.207ZM673.634 519.483H712.63C718.119 519.483 722.74 517.564 726.496 513.726C730.251 509.888 732.128 505.29 732.128 499.931C732.128 494.428 730.251 489.793 726.496 486.028C722.74 482.262 718.119 480.379 712.63 480.379H673.634V519.483ZM673.634 571.621H721.296C726.785 571.621 731.406 569.702 735.161 565.864C738.917 562.026 740.794 557.428 740.794 552.069C740.794 546.566 738.917 541.931 735.161 538.165C731.406 534.4 726.785 532.517 721.296 532.517H673.634V571.621Z"
+                fill="url(#paint5_linear_254_1794)" />
+              <defs>
+                <linearGradient id="paint0_linear_254_1794" x1="438.729" y1="578" x2="438.729" y2="923.457"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3113F1" />
+                  <stop offset="1" stop-color="#883DF2" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_254_1794" x1="437.964" y1="640.671" x2="437.964" y2="848.557"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#883DF2" />
+                  <stop offset="1" stop-color="#3113F1" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_254_1794" x1="388.414" y1="124" x2="388.414" y2="542.829"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3113F1" />
+                  <stop offset="1" stop-color="#883DF2" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_254_1794" x1="387.487" y1="181.45" x2="387.487" y2="494.645"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3113F1" />
+                  <stop offset="1" stop-color="#883DF2" />
+                </linearGradient>
+                <linearGradient id="paint4_linear_254_1794" x1="697" y1="391" x2="697" y2="661"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3113F1" />
+                  <stop offset="1" stop-color="#883DF2" />
+                </linearGradient>
+                <linearGradient id="paint5_linear_254_1794" x1="697.465" y1="447.793" x2="697.465" y2="604.207"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3113F1" />
+                  <stop offset="1" stop-color="#3113F1" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg class="portada-cel" viewBox="0 0 938 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="724.729" cy="385.729" r="166.729" stroke="url(#paint0_linear_254_1661)" stroke-width="12"/>
+              <path d="M722.735 483.557C720.228 483.557 718.155 482.739 716.516 481.103C714.877 479.467 714.057 477.398 714.057 474.895V459.304C704.801 457.764 696.895 454.492 690.339 449.487C683.783 444.482 678.673 438.13 675.009 430.431C674.045 428.313 674.045 426.1 675.009 423.79C675.973 421.48 677.612 419.844 679.926 418.882C682.047 417.919 684.217 417.919 686.434 418.882C688.652 419.844 690.339 421.384 691.496 423.501C694.967 430.046 699.499 434.954 705.091 438.226C710.683 441.499 717.143 443.135 724.47 443.135C733.726 443.135 741.343 440.825 747.321 436.205C753.299 431.586 756.288 425.234 756.288 417.149C756.288 408.68 753.636 402.135 748.333 397.516C743.031 392.896 733.051 388.18 718.396 383.368C704.512 378.941 694.147 373.07 687.302 365.755C680.456 358.441 677.034 349.298 677.034 338.326C677.034 327.739 680.456 318.885 687.302 311.763C694.147 304.641 703.066 300.598 714.057 299.636V284.333C714.057 281.831 714.877 279.762 716.516 278.126C718.155 276.489 720.228 275.671 722.735 275.671C725.242 275.671 727.315 276.489 728.954 278.126C730.593 279.762 731.412 281.831 731.412 284.333V299.636C738.354 300.598 744.573 302.716 750.069 305.988C755.565 309.26 760.144 313.495 763.808 318.692C765.158 320.617 765.447 322.686 764.676 324.9C763.905 327.113 762.362 328.701 760.048 329.664C757.927 330.626 755.709 330.723 753.395 329.953C751.081 329.183 749.153 327.739 747.61 325.622C744.911 322.157 741.584 319.606 737.631 317.97C733.678 316.334 728.906 315.516 723.313 315.516C714.443 315.516 707.405 317.537 702.198 321.579C696.992 325.622 694.388 331.108 694.388 338.037C694.388 345.352 697.281 351.271 703.066 355.794C708.851 360.317 719.553 364.985 735.173 369.797C748.285 373.84 757.975 379.662 764.242 387.266C770.509 394.869 773.643 404.445 773.643 415.994C773.643 428.121 770.075 437.89 762.941 445.3C755.806 452.711 745.296 457.475 731.412 459.592V474.895C731.412 477.398 730.593 479.467 728.954 481.103C727.315 482.739 725.242 483.557 722.735 483.557Z" fill="url(#paint1_linear_254_1661)"/>
+              <circle cx="585" cy="112" r="106" stroke="url(#paint2_linear_254_1661)" stroke-width="12"/>
+              <path d="M567.412 176.883C565.855 176.883 564.567 176.372 563.548 175.351C562.53 174.33 562.02 173.038 562.02 171.476V160.662H544.047C542.489 160.662 541.201 160.152 540.183 159.13C539.164 158.109 538.655 156.817 538.655 155.255C538.655 153.693 539.164 152.402 540.183 151.38C541.201 150.359 542.489 149.848 544.047 149.848H554.831V74.1519H544.047C542.489 74.1519 541.201 73.6413 540.183 72.62C539.164 71.5987 538.655 70.307 538.655 68.745C538.655 67.183 539.164 65.8914 540.183 64.8701C541.201 63.8488 542.489 63.3381 544.047 63.3381H562.02V52.5243C562.02 50.9623 562.53 49.6707 563.548 48.6494C564.567 47.6281 565.855 47.1174 567.412 47.1174C568.97 47.1174 570.258 47.6281 571.277 48.6494C572.295 49.6707 572.804 50.9623 572.804 52.5243V63.3381H592.575V52.5243C592.575 50.9623 593.084 49.6707 594.103 48.6494C595.121 47.6281 596.41 47.1174 597.967 47.1174C599.525 47.1174 600.813 47.6281 601.832 48.6494C602.85 49.6707 603.359 50.9623 603.359 52.5243V63.8788C609.83 65.2005 615.042 68.3846 618.996 73.431C622.95 78.4774 624.927 84.1246 624.927 90.3726C624.927 93.7369 624.268 97.0711 622.95 100.375C621.632 103.68 619.715 106.653 617.199 109.297C621.872 111.7 625.527 115.094 628.163 119.48C630.799 123.865 632.117 128.581 632.117 133.628C632.117 141.197 629.511 147.596 624.298 152.822C619.086 158.049 612.706 160.662 605.157 160.662H603.359V171.476C603.359 173.038 602.85 174.33 601.832 175.351C600.813 176.372 599.525 176.883 597.967 176.883C596.41 176.883 595.121 176.372 594.103 175.351C593.084 174.33 592.575 173.038 592.575 171.476V160.662H572.804V171.476C572.804 173.038 572.295 174.33 571.277 175.351C570.258 176.372 568.97 176.883 567.412 176.883ZM565.615 106.593H597.967C602.521 106.593 606.355 105.001 609.47 101.817C612.586 98.6331 614.143 94.8183 614.143 90.3726C614.143 85.8068 612.586 81.9619 609.47 78.8379C606.355 75.7139 602.521 74.1519 597.967 74.1519H565.615V106.593ZM565.615 149.848H605.157C609.71 149.848 613.544 148.256 616.66 145.072C619.775 141.888 621.333 138.073 621.333 133.628C621.333 129.062 619.775 125.217 616.66 122.093C613.544 118.969 609.71 117.407 605.157 117.407H565.615V149.848Z" fill="url(#paint3_linear_254_1661)"/>
+              <g filter="url(#filter0_d_254_1661)">
+              <circle cx="284.329" cy="391.5" r="237.5" stroke="url(#paint4_linear_254_1661)" stroke-width="12"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M271.384 270.485L194.959 439.844L271.384 452.318V270.485ZM295.118 270.485V452.318L371.542 439.844L295.118 270.485ZM283.251 553.076L207.954 464.001L278.311 475.484C281.583 476.018 284.919 476.018 288.19 475.484L358.548 464.001L283.251 553.076ZM301.279 226.442C294.275 210.92 272.227 210.92 265.223 226.442L169.715 438.088C166.581 445.032 167.718 453.16 172.637 458.979L268.145 571.964C276.046 581.31 290.456 581.31 298.357 571.964L393.865 458.979C398.783 453.16 399.921 445.032 396.786 438.088L301.279 226.442Z" fill="url(#paint5_linear_254_1661)"/>
+              </g>
+              <path d="M539.003 614.751L574.003 635L609 614.747L608.997 574.247L573.998 554L539 574.251L539.003 614.751Z" stroke="#3113F1" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M275.003 92.7513L310.003 113L345 92.7475L344.997 52.2475L309.998 32L275 52.2513L275.003 92.7513Z" stroke="#3113F1" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M850.003 240.001L886.003 261L922 239.997L921.997 197.997L885.998 177L850 198.001L850.003 240.001Z" stroke="#3113F1" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M922 325.747C922 321.473 925.464 318 929.747 318C934.021 318 937.493 321.464 937.493 325.747C937.493 330.022 934.03 333.494 929.747 333.494C925.464 333.494 922 330.03 922 325.747Z" fill="#3113F1" fill-opacity="0.5"/>
+              <path d="M779 80.6226C779 76.4106 782.41 73 786.622 73C790.834 73 794.244 76.4106 794.244 80.6226C794.244 84.8346 790.834 88.2452 786.622 88.2452C782.41 88.2452 779 84.8346 779 80.6226Z" fill="#3113F1" fill-opacity="0.5"/>
+              <path d="M752.461 164.091C752.461 160.983 754.981 158.454 758.097 158.454C761.205 158.454 763.734 160.974 763.734 164.091C763.734 167.208 761.214 169.728 758.097 169.728C754.99 169.728 752.461 167.208 752.461 164.091Z" fill="#3113F1" fill-opacity="0.5"/>
+              <path d="M766.14 172.141C770.584 167.697 770.583 160.491 766.139 156.047C761.695 151.603 754.491 151.603 750.047 156.047C745.603 160.491 745.602 167.697 750.046 172.141C754.49 176.586 761.696 176.586 766.14 172.141Z" stroke="#3113F1" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M403.461 95.091C403.461 91.9832 405.981 89.4543 409.097 89.4543C412.205 89.4543 414.734 91.9743 414.734 95.091C414.734 98.2077 412.214 100.728 409.097 100.728C405.99 100.728 403.461 98.2077 403.461 95.091Z" fill="#3113F1" fill-opacity="0.5"/>
+              <path d="M417.14 103.141C421.584 98.6969 421.583 91.4914 417.139 87.0471C412.695 82.6027 405.491 82.6027 401.047 87.0471C396.603 91.4914 396.602 98.6969 401.046 103.141C405.49 107.586 412.696 107.586 417.14 103.141Z" stroke="#3113F1" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M419.461 16.091C419.461 12.9832 421.981 10.4543 425.097 10.4543C428.205 10.4543 430.734 12.9743 430.734 16.091C430.734 19.2077 428.214 21.7278 425.097 21.7278C421.99 21.7278 419.461 19.2077 419.461 16.091Z" fill="#3113F1" fill-opacity="0.5"/>
+              <path d="M433.14 24.1413C437.584 19.6969 437.583 12.4914 433.139 8.04705C428.695 3.60273 421.491 3.60273 417.047 8.04705C412.603 12.4914 412.602 19.6969 417.046 24.1413C421.49 28.5856 428.696 28.5856 433.14 24.1413Z" stroke="#3113F1" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M880.461 97.091C880.461 93.9832 882.981 91.4543 886.097 91.4543C889.205 91.4543 891.734 93.9743 891.734 97.091C891.734 100.208 889.214 102.728 886.097 102.728C882.99 102.728 880.461 100.208 880.461 97.091Z" fill="#3113F1" fill-opacity="0.5"/>
+              <path d="M894.14 105.141C898.584 100.697 898.583 93.4914 894.139 89.0471C889.695 84.6027 882.491 84.6027 878.047 89.0471C873.603 93.4914 873.602 100.697 878.046 105.141C882.49 109.586 889.696 109.586 894.14 105.141Z" stroke="#3113F1" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+              <filter id="filter0_d_254_1661" x="0.828613" y="108" width="567" height="567" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset/>
+              <feGaussianBlur stdDeviation="20"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.960784 0 0 0 0 0.960784 0 0 0 0 0.960784 0 0 0 0.43 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_254_1661"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_254_1661" result="shape"/>
+              </filter>
+              <linearGradient id="paint0_linear_254_1661" x1="724.729" y1="213" x2="724.729" y2="558.457" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3113F1"/>
+              <stop offset="1" stop-color="#883DF2"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_254_1661" x1="723.964" y1="275.671" x2="723.964" y2="483.557" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#883DF2"/>
+              <stop offset="1" stop-color="#3113F1"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear_254_1661" x1="585" y1="0" x2="585" y2="224" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3113F1"/>
+              <stop offset="1" stop-color="#883DF2"/>
+              </linearGradient>
+              <linearGradient id="paint3_linear_254_1661" x1="585.386" y1="47.1174" x2="585.386" y2="176.883" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3113F1"/>
+              <stop offset="1" stop-color="#3113F1"/>
+              </linearGradient>
+              <linearGradient id="paint4_linear_254_1661" x1="284.329" y1="148" x2="284.329" y2="635" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3113F1"/>
+              <stop offset="1" stop-color="#883DF2"/>
+              </linearGradient>
+              <linearGradient id="paint5_linear_254_1661" x1="283.251" y1="214.801" x2="283.251" y2="578.973" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3113F1"/>
+              <stop offset="1" stop-color="#883DF2"/>
+              </linearGradient>
+              </defs>
+              </svg>
+              
+          </div>
+          <div class="portada-texto col-12 col-md-12 col-lg-6 d-flex justify-content-center flex-column">
+            <h1 class="h1">Ingresá al negocio de la minería de criptomonedas
+              <span>de forma rápida y segura!</span></h1>
+            <p style="width:90%;">Te llevamos cajas todos los meses, pensadas para que los más chicos aprendan
+              cocinando. </p>
+            <div class="d-flex">
+              <a href="" class="btn boton-relleno">Conocenos</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!--porque-->
+    <section class="funcion" id="cripto" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+      <div class="container">
+        <div class="bloque-titulo">
+          <h2 class="text-center"> ¿POR QUÉ MINAR <span>CRIPTOMONEDAs?</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, laborum cumque accusantium accusamus
+            obcaecati natus, numquam mollitia soluta amet quidem perferendis perspiciatis impedit voluptate non nisi
+            unde qui doloremque dolore?</p>
+        </div>
+        <article class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card relleno" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+              <img src="img/garantias.svg" class="card-img-top d-block w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ingresos de forma pasiva </h5>
+                <p class="card-text">La minería es una herramienta que nos permite generar ingresos de forma pasiva, sin
+                  límites ni cepos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500"
+            data-aos-easing="ease-in-sine">
+            <div class="card relleno">
+              <img src="img/garantias.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Exclentes rendimientos</h5>
+                <p class="card-text">Podemos obtener rendimientos en criptomonedas muy superiores a otras alternativas
+                  de inversión. Varía entre un 5-8% …. mensual en dólares!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500"
+            data-aos-easing="ease-in-sine">
+            <div class="card relleno">
+              <img src="img/garantias.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pagá tu sucripcion</h5>
+                <p class="card-text">Pagá con el metodo de pago de tu preferencia.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="container-fluid nosotros" id="nosotros">
+      <article class="row align-items-center">
+        <div class="col-12 col-md-6 col-lg-5 " data-aos="fade-up" data-aos-duration="1500"
+          data-aos-easing="ease-in-sine">
+          <div class="col-texto">
+            <div class="">
+              <h4> <span class="linea">QUIENES</span> SOMOS</h4>
+              <h2><span>La transparencia</span> es un pilar fundamental de nuestra empresa</h2>
+            </div>
+
+            <p>Nuestro objetivo principal, es que puedan ingresar al negocio de la minería sin tener que ser expertos en
+              el tema ni dedicarle el tiempo que requiere una actividad compleja como esta.
+            </p>
+            <p>Contamos con un depósito con extracción y ventilación, conexión trifásica y doble proveedor de internet.
+            </p>
           </div>
         </div>
-      </nav>
-      <main>
+        <div class="col-12 col-md-6 col-lg-7" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-easing="ease-in-sine">
+          <img src="img/nosotros.jpg" alt="" class="d-block w-100">
+        </div>
+      </article>
+    </section>
+    <section class="container" id="" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+      <div class="bloque-titulo">
+        <h4>Nuestros servicios</h4>
+        <h2 class="text-center"> Desprocupate, nostros nos <span>encargamos</span></h2>
+      </div>
+      <article class="row">
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="card sin-fondo" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+            <img src="img/compra-equipo.svg" class="card-img-top card-img-funcion" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Compra de equipos</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+          <div class="card sin-fondo">
+            <img src="img/armado.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Armado de equipos</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+          <div class="card sin-fondo">
+            <img src="img/correcto-funcionamiento.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Correcto funcionamiento</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+          <div class="card sin-fondo">
+            <img src="img/garantias.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Monitoreo de equipos</h5>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="row">
+        <div class="col-6 col-md-6 col-lg-3">
+          <div class="card sin-fondo" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+            <img src="img/mantenimiento.svg" class="card-img-top card-img-funcion" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mantenimiento</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+          <div class="card sin-fondo">
+            <img src="img/seguridad.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Seguridad</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+          <div class="card sin-fondo">
+            <img src="img/optimizacion.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Optimización</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+          <div class="card sin-fondo">
+            <img src="img/garantias.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Garantías</h5>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="container-fluid porque inicio" id="porque">
+      <article class="row align-items-center">
+        <div class="col-12 col-md-6 col-lg-7" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-easing="ease-in-sine">
+          <img src="img/porque.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="col-12 col-md-6 col-lg-5" data-aos="fade-up" data-aos-duration="1500"
+          data-aos-easing="ease-in-sine">
+          <div class="col-texto">
+            <div>
+              <h4> <span class="linea">Porque</span> elegirnos</h4>
+              <h2>POR QUE <span>THE SEED</span></h2>
+            </div>
+            <ul>
+              <li>
+                <div>
+                  <h3 class="h5">Ingreso accesible
+                  </h3>
+                  <p>No necesitas ingresar con un rig completo </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3 class="h5">Comienzo rápido</h3>
+                  <p>Solo con el valor de una placa de video podés acceder a nuestros servicios.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3 class="h5">Hospedaje adecuado</h3>
+                  <p>Contamos con la infraestructura adecuada para el hospedaje de tus equipos.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3 class="h5">Acesoramiento</h3>
+                  <p>Hacemos asesoría Pre y Post venta</p>
+                </div>
+              </li>
+            </ul>
 
-      </main>
-      <footer>
+          </div>
 
-      </footer>
+        </div>
+      </article>
+    </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!--separados-->
+    <div class="separador">
+      <div class="container">
+        <h3>Te brindamos las herramientas para que puedas seguir tus rendimientos en tiempo real.
+        </h3>
+      </div>
+    </div>
+
+    <section class="container" id="funcion" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+      <div class="bloque-titulo">
+        <h2 class="center">Ventjas de elegirnos</h2>
+      </div>
+      <article class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+            <img src="img/elegi.png" class="card-img-top card-img-funcion" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Elegí tu sucripción</h5>
+              <p class="card-text">Elegí entre nuestros 3 tipos de suscripciones</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500"
+          data-aos-easing="ease-in-sine">
+          <div class="card">
+            <img src="img/lista.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Completá tus datos</h5>
+              <p class="card-text">Completá todos los campos necesarios</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500"
+          data-aos-easing="ease-in-sine">
+          <div class="card">
+            <img src="img/lista.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pagá tu sucripcion</h5>
+              <p class="card-text">Pagá con el metodo de pago de tu preferencia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500"
+          data-aos-easing="ease-in-sine">
+          <div class="card">
+            <img src="img/lista.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Recibí tu caja</h5>
+              <p class="card-text">Relajaté, nos encargamos de que llegue a tu casa.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="container-fluid retirate">
+      <article class="row align-items-center retirate">
+        <div class="col-12 col-md-7 col-lg-7" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-easing="ease-in-sine">
+          <img src="img/placas.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="col-12 col-md-5 col-lg-5" data-aos="fade-up" data-aos-duration="1500"
+          data-aos-easing="ease-in-sine">
+          <div class="col-texto">
+            <h2>Retirate en cualquier momento</h2>
+            <p>Las placas de video adquiridas pertenecen al cliente.
+              En caso de querer retirarse de The Seed, es libre de hacerlo en todo momento, se entregan las placas
+              adquiridas identificadas por número de serie y el inversor es libre de hacer lo que quiera.
+              En caso de querer venderlas, The Seed ayudará con la gestión.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!--separados-->
+    <div class="separador">
+      <div>
+        <h3>Te brindamos las herramientas para que puedas seguir tus rendimientos en tiempo real.
+        </h3>
+      </div>
+    </div>
+
+
+
+    <!--Contacto-->
+    <section id="contacto" class="p-5 text-center">
+      <h2 class="contacto-titulo p-5">¿Estás listo para empezar?</h2>
+      <p class="pb-5"> Comunicate con nostros. Comencemos tu camino en el negocio de la minería juntos</p>
+      <div class="d-flex justify-content-center flex-wrap">
+        <a class="enlace-boton3" href="mailto:mili.irusta@gmail.com">MAIL</a>
+        <a class="enlace-boton" target="_blank" href="https://www.linkedin.com/in/milagros-malen-irusta/">LINKEDIN</a>
+        <a href="tel:3585069648" class="enlace-boton">TELEFONO</a>
+      </div>
+    </section>
+  </main>
+  <footer class="">
+    <div class="container">
+      <!--navegacion del footer-->
+      <ul class="d-flex  justify-content-around">
+        <li class="pt-5">
+          <a href="index.html">
+            <img class="logo" src="img/logo-version1.svg" alt="Logo, link de la pagina principal">
+          </a>
+        </li>
+        <!--menu del footer-->
+        <li>
+          <ul class="pt-5 footer-menu">
+            <li>
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#sobreMi">Sobre mí</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="p-5">
+          <a href="https://www.linkedin.com/in/milagros-malen-irusta/" target="_blank" class="logo">
+            <img class="icon-linkdin" src="img/linkedin.svg" alt="Link a Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <div class="pt-3 d-flex flex-wrap justify-content-around the-seed-firma">
+        <p class="p-3">©2022 The Seed.</p>
+      </div>
+      <div class="firma text-center">
+        <p>Diseño y programacion: Antonella Herrera | Imganes: Lorem ipsum | Iconografia : Lorem ipsum</p>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
