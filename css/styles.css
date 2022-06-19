@@ -9,7 +9,6 @@ body{
     color: #F5F5F5;
     /*height: 100vh;*/
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../img/backgraund.jpg');
     background-image:linear-gradient(180deg, #0C0542 0%, #06021E 13.14%, #000000 34.93%, #0C0541 55.2%, #050810 80.43%, #0D0642 100%);;
   /*  background-position: fixed;
     background-repeat: no-repeat;
@@ -19,6 +18,11 @@ body{
 
 .img{
   max-width: 100%;
+}
+
+.imagen{
+  width: 90%;
+  margin: 0 auto;
 }
 /*HEADER*/
 header{
@@ -87,7 +91,7 @@ h2{
     background-size: contain;
     padding:50px;
     font-family: 'rubik';
-    min-height: 432px;
+    min-height: 300px;
     text-transform: uppercase;
     background-repeat: no-repeat;
     margin: 2em;
@@ -103,8 +107,7 @@ h2{
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    padding-left:0.5rem;
-    padding-right: 0.5rem;
+    padding: 0.5rem;
 }
 .card-title{
   font-weight: 700;
@@ -137,7 +140,18 @@ border: none;
   color: #D9D9D9;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #883DF2;
-  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.nosotros .linea, .porque .linea, .retirate .linea{
+  margin-left: 0;
+}
+.linea h4{
+  margin-bottom: 0;
+  font-size: 1rem;
 }
 
 
@@ -182,6 +196,7 @@ border: none;
     background-color: #050810;
     margin-bottom: 0;
     padding-bottom: 1rem;
+    padding-top: 1rem;
   
   }
   .firma{
@@ -197,11 +212,6 @@ border: none;
     margin: 2em 1em 3em 1em;
 }
 
-.bloque-titulo h4, .col-texto h4{
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
   /*nosotros*/
  .nosotros .col-12, .nosotros .col-md-6, .nosotros .col-lg-6, 
  .porque .col-12, .porque .col-md-6, .porque .col-lg-6,
@@ -263,7 +273,31 @@ border: none;
   color: #fff;
   text-decoration: none;
 }
+.redondo{
+  padding: 24px 8px;
+  border-radius: 200%;
+}
 
+.btn img{
+  width: 30px;
+}
+
+.contacto{
+  background-image: url('../img/portada-backgraund-footer.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:right;
+  margin-bottom: 0;
+  min-height: 70vh;
+  padding-bottom:45%;
+}
+.contacto .btn{
+  min-width: 150px;
+}
+/*footer*/
+.footer-menu li{
+  width: fit-content;
+} 
 
 /*animacion*/
 .blink-1 {
@@ -503,7 +537,7 @@ border: none;
         justify-content: space-evenly
         ;
     }
-
+    
     footer>div>ul{
       flex-direction: row;
     }
@@ -554,7 +588,20 @@ border: none;
   .titulos{
     text-align: center;
   }
-  .bloque-titulo h4, .col-texto h4{
+  .linea {
     margin-bottom: 2rem;
+  }
+  .linea h4{
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  .imagen{
+    width: 100%;
+    margin: 0;
+  }
+  .contacto{
+    padding-bottom: 20%;
+    background-position: bottom;
   }
 }
