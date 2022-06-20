@@ -17,8 +17,11 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" href="img/favicon-16x16.png" type="image/png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <title>Document</title>
 </head>
 
@@ -52,7 +55,7 @@
     <section class="portada d-flex align-items-center" id="inicio">
       <div class="container">
         <article class="row align-items-lg-center">
-          <div class="col-12 col-md-12 col-lg-6">
+          <div class="col-12 col-md-6 col-lg-6">
             <!--celular-->
             <div class="contenedor-portada-celular">
               <!-- <svg class="portada-cel animate__flash" viewBox="0 0 937 675" fill="none"
@@ -291,8 +294,7 @@
                 </defs>
                 </svg>
                 
-                
-
+            
             </div>
             <!--tablet-->
             <div>
@@ -616,7 +618,7 @@
 
             </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-center flex-column">
+          <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center flex-column">
             <article class="portada-texto">
               <h1 class="h1" class="wow bounceInUp">Ingresá al negocio de la minería de
                 <span>forma rápida y segura!</span></h1>
@@ -699,9 +701,12 @@
         <div class="col-12 col-md-12 col-lg-7" data-aos="fade-up" data-aos-duration="1000"
           data-aos-easing="ease-in-sine">
           <div class="imagen">
-            <img src="img/nosotros.jpg" alt="" class="d-block w-100">
+            <picture >
+              <source media="(max-width:767px )" srcset="img/placas.jpg">
+              <source media="(max-width:991px)" srcset="img/nosotros-tablet.jpg">
+              <img src="img/nosotros.jpg" alt="" class="d-block w-100">
+            </picture>
           </div>
-
         </div>
       </article>
     </section>
@@ -897,9 +902,14 @@
       <article class="row align-items-center retirate">
         <div class="col-12 col-md-7 col-lg-7" data-aos="fade-up" data-aos-duration="1000"
           data-aos-easing="ease-in-sine">
-          <div class="imagen">
-            <img src="img/placas.jpg" alt="" class="d-block w-100">
-          </div>
+            <div class="imagen">
+              <picture >
+                <source media="(max-width:767px )" srcset="img/placas.jpg">
+                <source media="(max-width:991px)" srcset="img/porque-tablet.jpg">
+                <img src="img/placas-tablet.jpg" alt="" class="d-block w-100">
+              </picture>
+  
+            </div>
 
         </div>
         <div class="col-12 col-md-5 col-lg-5" data-aos="fade-up" data-aos-duration="1500"
