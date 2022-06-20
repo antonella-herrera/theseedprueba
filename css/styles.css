@@ -529,7 +529,16 @@ border: none;
     }
   }
   */
+@media screen and (min-width:768px) {
+  .img-portada-desktop{
+    display: block;
+  }
+  .portada-cel{
+    display: none;
+  }
 
+  
+}
 /*DESKTOP*/
   @media (min-width:992px) {
     .footer-menu{
@@ -566,12 +575,7 @@ border: none;
       width: 594px;
     }
 
-    .img-portada-desktop{
-      display: block;
-    }
-    .portada-cel{
-      display: none;
-    }
+
     h2{
       font-size: 40px;
     }
